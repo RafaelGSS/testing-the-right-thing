@@ -13,3 +13,7 @@ jobs:
     steps:
       - name: Test compare
         uses: nearform-actions/github-action-test-compare@master
+        with:
+          tests: 'test.js'
+          testCommand: 'node test.js'
+          installCommand: 'echo "" > /dev/null'
