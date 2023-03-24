@@ -16,8 +16,4 @@ jobs:
         with:
           tests: 'test.js'
           testCommand: 'node test.js'
-<<<<<<< HEAD
           installCommand: 'echo "" > /dev/null'
-=======
-          installCommand: ''
->>>>>>> 6a10ef2 (fix: add test compare options)
