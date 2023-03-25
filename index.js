@@ -1,4 +1,7 @@
 function sum (a, b) {
+  if (typeof a === 'string' && !Object.is(+a, NaN)) {
+    a = +a
+  }
   if (typeof a !== 'number' || typeof b !== 'number') {
     throw new Error('The argument must be a number')
   }
