@@ -1,7 +1,7 @@
 name: Test compare
 on:
   pull_request:
-    types: [opened, reopened, synchronize, labeled, unlabeled]
+    types: [opened, reopened, synchronize, labeled]
 
 jobs:
   run:
@@ -12,7 +12,7 @@ jobs:
       pull-requests: write
     steps:
       - name: Test compare
-        uses: nearform-actions/github-action-test-compare@master
+        uses: nearform-actions/github-action-test-compare@v1
         with:
           tests: 'test.js'
           testCommand: 'node test.js'
